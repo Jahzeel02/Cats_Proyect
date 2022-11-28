@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="CatsFood">
+
+  
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Open Graph & SEO tags -->
+  <meta property="og:title" content="CatsFood" />
+  <meta property="og:description" content="Built with FlutterFlow." />
+  <meta property="og:image" content="https://storage.googleapis.com/flutterflow-prod-hosting/og_splash_gradient.png" /> 
+  <meta name="twitter:title" content="CatsFood" />
+  <meta name="twitter:description" content="Built with FlutterFlow." />
+  <meta name="twitter:image" content="https://storage.googleapis.com/flutterflow-prod-hosting/og_splash_gradient.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title> CatsFood </title>
+  <meta name="description" content="Built with FlutterFlow." />
+    
+
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+  
+  
+  
+
+  <script>
+    const firebaseConfig = {
+    apiKey: "AIzaSyAQOpON_7l_9vs_Dtz4DZswJlz_QAPpUa4",
+      authDomain: "deneb2-bca0a.firebaseapp.com",
+      projectId: "deneb2-bca0a",
+      storageBucket: "deneb2-bca0a.appspot.com",
+      messagingSenderId: "301810928582",
+      appId: "1:301810928582:web:584947d3edb0cb4e3880c7"
+    }
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  
+  
+  
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
